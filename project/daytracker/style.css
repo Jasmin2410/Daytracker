@@ -29,6 +29,7 @@
 select:hover{
     border: 0;
     background-color: rgba(185, 213, 246, 0.875);
+    cursor: pointer;
 }
 select{
     border: 0;
@@ -36,10 +37,12 @@ select{
 #part1>button:hover{
     color:blue;
     background-color: rgba(185, 213, 246, 0.875);
+    cursor: pointer;
 }
 #part2{
     display: flex;
-    padding-right: 100px;
+    padding-right: 20px;
+    padding-top: 10px;
 }
 #part2>button{
     margin-top: 15px;
@@ -57,6 +60,7 @@ select{
 #part2>button:hover{
     color:blue;
     background-color: rgba(185, 213, 246, 0.875);
+    cursor: pointer;
 }
 #text1{
     color: azure;
@@ -100,7 +104,7 @@ select{
 }
 .carts>div:hover{
     border: 1px solid rgb(215, 215, 240);
-  
+    cursor: pointer;
 }
 
 .box{
@@ -114,7 +118,7 @@ select{
 .box:hover{
     border: 1px solid rgb(215, 215, 240);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+    cursor: pointer;
 }
 *{
     text-align: center;
@@ -143,6 +147,7 @@ select{
     background-color: rgba(185, 213, 246, 0.875);
     text-align: center;
     border:0;
+    cursor: pointer;
 }
 .home1{
     padding-top: 10px;
@@ -291,6 +296,7 @@ section{
     border: 1px solid white;
     font-size: 15px;
     margin-bottom: 200px;
+    cursor: pointer;
 }
 #vidio{
     padding-top: 1600px;
@@ -314,7 +320,7 @@ section{
 #cart2>div:hover{
     border: 1px solid blue;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+    cursor: pointer;
     /* background-color: rgb(4, 4, 251); */
 }
 #workflow2{
@@ -370,7 +376,7 @@ font-size: 30px;
 }
 #cc1:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+    cursor: pointer;
 }
 #tick>p{
     text-align: left;
@@ -397,6 +403,7 @@ font-size: 30px;
     border: 1px solid white;
     font-size: 15px;
     margin-bottom: 20px;
+  cursor: pointer;
 }
 #successstories{
     display: flex;
@@ -409,6 +416,8 @@ font-size: 30px;
 
 }
 #st2{
+    margin-top: 20px;
+    padding-top: 20px;
     width:400px;
     height:250px;
     line-height: 25px;
@@ -530,4 +539,13 @@ box-shadow: rgba(94, 158, 231, 0.25) 0px 54px 55px, rgba(94, 158, 231, 0.25) 0px
 }
 #footer1>div>p:hover{
     color:blue;
+    cursor: pointer;
+}
+#cart3>div:hover{
+    box-shadow: rgba(48, 152, 232, 0.3) 0px 1px 2px 0px, rgba(43, 151, 233, 0.15) 0px 2px 6px 2px;
+    padding: 2%;
+    text-align: justify;
+    margin:10px;
+    background-color: white;
+    cursor: pointer;
 }
