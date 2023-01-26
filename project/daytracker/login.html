@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai login page</title>
+    <style>
+        div{
+            margin:auto;
+            margin-top: 100px;
+            height:400px;
+            width:400px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            background-color: aliceblue;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>monday.com</h1>
+        <h4>Login</h4>
+        <p>Email</p>
+        <input id="email" type="text" placeholder="enter email"> <br> <br>
+        <p>Phone Number</p>
+        <input id="mbl" type="number" placeholder="enter phone number"> <br> <br>
+        <p>Password</p>
+        
+        <input id="pass" type="text" placeholder="password"> <br> <br>
+         <button  onclick="mylogin()">LOGIN</button>
+    </div>
+</body>
+</html>
+<script>
+
+
+function mysign(){
+    let arr=JSON.parse(localStorage.getItem("key"))||[]
+    let obj={
+        email:document.querySelector("#email").value,
+        phone:document.querySelector("#mbl").value,
+        password:document.querySelector("#pass").value
+    }
+   if(obj.email==""||obj.phone==""||obj.password==""){
+    alert("please enter details");
+    return;
+   }
+   else{
+    arr.push(obj)
+ localStorage.setItem("key",JSON.stringify(arr))
+alert("signup successful");
+return;
+   }
+   
+   
+}
+
+function mylogin(){
+    //step1-->localstorage data ni thechuko
+    //step2--> current input values ni localstorage lo unna data ni compare
+    //step-3-->1.same   2.different
+//same-->login successful
+//different-->enter correct details
+let arr1=JSON.parse(localStorage.getItem("key"))
+
+for(let i=0;i<arr1.length;i++){
+if(arr1[i].email===document.getElementById("email").value && arr1[i].password===document.getElementById("pass").value && arr1[i].phone==document.getElementById('mbl').value){
+    alert("login suyccessful");
+    return;
+
+}
+}
+     alert("please enter correct details");
+     return;
+
+
+}
+
+
+//arrrofobj=[{},{},{}]
+
+
+</script>
+
+
+
+
